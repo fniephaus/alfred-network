@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>com.fniephaus.network</string>
 	<key>category</key>
-	<string>Tools</string>
+	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>03CD743F-F00F-4E46-892C-2FC1F1289953</key>
@@ -45,7 +45,45 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B88DD298-C36F-4E85-9E4D-15C0BB2A3BCE</string>
+				<string>BE727637-1A4D-4529-87A6-BD7D18D00B12</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF7D7ABB-3161-42BC-AF43-F5F19B3A1365</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>BE727637-1A4D-4529-87A6-BD7D18D00B12</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1CC5345C-CED7-493F-94E3-DB883C7C171F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D058255D-D1B3-4730-9A31-BDECE3312522</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>CF7D7ABB-3161-42BC-AF43-F5F19B3A1365</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1CC5345C-CED7-493F-94E3-DB883C7C171F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -67,7 +105,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F8A8AEDA-E6E8-482F-8B06-D0668B825FF3</string>
+				<string>1CC5345C-CED7-493F-94E3-DB883C7C171F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -75,7 +113,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>1CC5345C-CED7-493F-94E3-DB883C7C171F</string>
+				<string>88C50A45-7AC8-45BA-811A-7B06568CC633</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -96,6 +134,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>1CC5345C-CED7-493F-94E3-DB883C7C171F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
@@ -108,6 +161,31 @@ echo "DNS cache flushed"</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>62A77632-669C-4B30-BB94-4BFEE128B841</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Flush DNS</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F8A8AEDA-E6E8-482F-8B06-D0668B825FF3</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -133,44 +211,8 @@ echo "DNS cache flushed"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Terminal Shortcuts</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>F8A8AEDA-E6E8-482F-8B06-D0668B825FF3</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>1CC5345C-CED7-493F-94E3-DB883C7C171F</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
@@ -209,10 +251,62 @@ echo "DNS cache flushed"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Ping</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>88C50A45-7AC8-45BA-811A-7B06568CC633</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>NSLookup</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D058255D-D1B3-4730-9A31-BDECE3312522</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>nslookup</string>
+				<key>subtext</key>
+				<string>Full results copied to clipboard</string>
 				<key>text</key>
 				<string>Lookup domain</string>
 				<key>withspace</key>
@@ -228,15 +322,38 @@ echo "DNS cache flushed"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string>nslookup {query}</string>
+				<string>nslookup {query} | grep {query}</string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>B88DD298-C36F-4E85-9E4D-15C0BB2A3BCE</string>
+			<string>BE727637-1A4D-4529-87A6-BD7D18D00B12</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>nslookup {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CF7D7ABB-3161-42BC-AF43-F5F19B3A1365</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -282,55 +399,70 @@ echo "DNS cache flushed"</string>
 		<key>03CD743F-F00F-4E46-892C-2FC1F1289953</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>260</real>
 		</dict>
 		<key>1CC5345C-CED7-493F-94E3-DB883C7C171F</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>20</real>
 		</dict>
 		<key>62A77632-669C-4B30-BB94-4BFEE128B841</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>140</real>
+		</dict>
+		<key>88C50A45-7AC8-45BA-811A-7B06568CC633</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
 		</dict>
 		<key>A9F47BC4-2CAF-446F-8B0E-913247814AF0</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>620</real>
 		</dict>
 		<key>B4EAE8FB-F90E-479D-B2B7-CE0F545601AD</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>380</real>
 		</dict>
-		<key>B88DD298-C36F-4E85-9E4D-15C0BB2A3BCE</key>
+		<key>BE727637-1A4D-4529-87A6-BD7D18D00B12</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>380</real>
+		</dict>
+		<key>CF7D7ABB-3161-42BC-AF43-F5F19B3A1365</key>
+		<dict>
+			<key>ypos</key>
+			<real>500</real>
+		</dict>
+		<key>D058255D-D1B3-4730-9A31-BDECE3312522</key>
+		<dict>
+			<key>ypos</key>
+			<real>380</real>
 		</dict>
 		<key>DFF64C71-792A-49ED-8BCB-7F834F6014D7</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>140</real>
 		</dict>
 		<key>E04F5BE5-F65F-4762-A27C-D3A36D06B7B6</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>620</real>
 		</dict>
 		<key>E408395A-B076-4D06-A50E-57E89D8A719B</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>260</real>
 		</dict>
 		<key>F8A8AEDA-E6E8-482F-8B06-D0668B825FF3</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>140</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>https://github.com/fniephaus/alfred2/</string>
+	<string>https://github.com/fniephaus/alfred-network</string>
 </dict>
 </plist>
