@@ -216,7 +216,7 @@ echo "DNS cache flushed"</string>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
-				<string>ping -c 1 {query} | grep "64 bytes from"|awk '{print $4}' | cut -d":" -f1</string>
+				<string>ping -c 1 -t 6 {query} &amp;&gt; /dev/null &amp;&amp; echo "{query} is online." || echo "{query} is offline."</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
