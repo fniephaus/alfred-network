@@ -216,7 +216,7 @@ echo "DNS cache flushed"</string>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
-				<string>ping -c 1 -t 6 {query} &amp;&gt; /dev/null &amp;&amp; echo "{query} is online." || echo "{query} is offline."</string>
+				<string>ping -c 1 -t 6 {query} &amp;&gt; /dev/null &amp;&amp; echo "{query} is online at $(ping -c1 {query} | sed -nE 's/^PING[^(]+\(([^)]+)\).*/\1/p')." || echo "{query} is offline."</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
